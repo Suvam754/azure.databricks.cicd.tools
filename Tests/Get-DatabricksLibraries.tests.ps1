@@ -7,6 +7,6 @@ $ClusterId = "0103-085624-rick134"
 
 Describe "Get-DatabricksLibraries" {
     It "Simple fetch" {
-        $json = Get-DatabricksLibraries -BearerToken $BearerToken -Region $Region -ClusterId $ClusterId
+        Get-DatabricksLibraries -BearerToken $BearerToken -Region $Region -ClusterId $ClusterId
     }
 }
