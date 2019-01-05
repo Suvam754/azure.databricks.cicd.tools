@@ -1,9 +1,9 @@
 Import-Module "$PSScriptRoot\..\azure.databricks.cicd.tools.psm1" -Force
-$BearerToken = Get-Content "$PSScriptRoot\MyBearerToken.txt" # Create this file in the Tests folder with just your bearer token in
-$Region = "west europe" 
+$BearerToken = "dapi30a0cadc441633bf539aa4925bbaf34d" # Create this file in the Tests folder with just your bearer token in
+$Region = "Central US" 
 
 #TODO - Create dummy cluster
-$ClusterId = "0926-081131-crick762"
+$ClusterId = "0103-085624-rick134"
 
 Describe "Get-DatabricksLibraries" {
     It "Simple fetch" {
@@ -11,4 +11,3 @@ Describe "Get-DatabricksLibraries" {
         $json.Count | Should -BeGreaterThan 0
     }
 }
-
