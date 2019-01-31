@@ -1,6 +1,6 @@
 Import-Module "$PSScriptRoot\..\azure.databricks.cicd.tools.psm1" -Force
 
-$BearerToken = Get-Content "$PSScriptRoot\MyBearerToken.txt"  # Create this file in the Tests folder with just your bearer token in
+$BearerToken = "dapid868cb026259cb66d86122a1fb7f0f40"  # Create this file in the Tests folder with just your bearer token in
 $Region = "westus"
 Set-Location $PSScriptRoot
 
