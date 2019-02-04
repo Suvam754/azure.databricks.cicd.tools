@@ -1,5 +1,6 @@
 Import-Module "$PSScriptRoot\..\azure.databricks.cicd.tools.psm1" -Force
-BearerToken=$1 # Create this file in the Tests folder with just your bearer token in
+echo $1
+$BearerToken = $1
 $Region = "westeurope" 
 $ClusterName="vsdsfafasfasf"
 $SparkVersion="4.0.x-scala2.11"
