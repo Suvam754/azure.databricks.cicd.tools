@@ -1,6 +1,6 @@
 Import-Module "$PSScriptRoot\..\azure.databricks.cicd.tools.psm1" -Force
 echo $1 hello world
-$BearerToken=$1
+$Databrickstokennn="$1"
 $Region = "westeurope" 
 $ClusterName="vsdsfafasfasf"
 $SparkVersion="4.0.x-scala2.11"
@@ -15,7 +15,7 @@ $PythonVersion = 2
 
 Describe "New-DatabricksCluster" {
     It "Create basic cluster"{
-        $ClusterId = New-DatabricksCluster  -BearerToken $BearerToken -Region $Region -ClusterName $ClusterName -SparkVersion $SparkVersion -NodeType $NodeType `
+        $ClusterId = New-DatabricksCluster  -Databrickstokennn $Databrickstokennn -Region $Region -ClusterName $ClusterName -SparkVersion $SparkVersion -NodeType $NodeType `
             -MinNumberOfWorkers $MinNumberOfWorkers -MaxNumberOfWorkers $MaxNumberOfWorkers `
             -Spark_conf $Spark_conf -AutoTerminationMinutes $AutoTerminationMinutes `
             -Verbose -SparkEnvVars $SparkEnvVars -PythonVersion $PythonVersion   # -UniqueNames -Update
