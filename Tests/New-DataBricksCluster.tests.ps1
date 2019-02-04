@@ -1,6 +1,11 @@
+    param
+(
+    [Parameter(Mandatory)]
+    [String]$Databrickstokennn
+
+)
 Import-Module "$PSScriptRoot\..\azure.databricks.cicd.tools.psm1" -Force
-echo $1 hello world
-$Databrickstokennn="$1"
+echo $Databrickstokennn
 $Region = "westeurope" 
 $ClusterName="vsdsfafasfasf"
 $SparkVersion="4.0.x-scala2.11"
