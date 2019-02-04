@@ -1,6 +1,6 @@
 Import-Module "$PSScriptRoot\..\azure.databricks.cicd.tools.psm1" -Force
 echo $1
-BearerToken=$1
+BearerToken="$1"
 $Region = "westeurope" 
 $ClusterName="vsdsfafasfasf"
 $SparkVersion="4.0.x-scala2.11"
