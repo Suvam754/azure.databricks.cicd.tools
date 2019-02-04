@@ -20,7 +20,7 @@ $PythonVersion = 2
 
 Describe "New-DatabricksCluster" {
     It "Create basic cluster"{
-        $ClusterId = New-DatabricksCluster  -Databrickstokennn $Databrickstokennn -Region $Region -ClusterName $ClusterName -SparkVersion $SparkVersion -NodeType $NodeType `
+        $ClusterId = New-DatabricksCluster  -BearerToken $Databrickstokennn -Region $Region -ClusterName $ClusterName -SparkVersion $SparkVersion -NodeType $NodeType `
             -MinNumberOfWorkers $MinNumberOfWorkers -MaxNumberOfWorkers $MaxNumberOfWorkers `
             -Spark_conf $Spark_conf -AutoTerminationMinutes $AutoTerminationMinutes `
             -Verbose -SparkEnvVars $SparkEnvVars -PythonVersion $PythonVersion   # -UniqueNames -Update
