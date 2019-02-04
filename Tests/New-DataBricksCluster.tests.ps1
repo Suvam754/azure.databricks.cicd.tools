@@ -7,7 +7,7 @@
 Set-Location $PSScriptRoot
 Import-Module "$PSScriptRoot\..\azure.databricks.cicd.tools.psm1" -Force
 $Region = "West US" 
-$ClusterName="dbrclstredhqa"
+$ClusterName="dbrclstredhqagh"
 $SparkVersion="4.0.x-scala2.11"
 $NodeType="Standard_DS3_v2"
 $MinNumberOfWorkers=1
