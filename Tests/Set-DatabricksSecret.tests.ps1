@@ -6,5 +6,8 @@ $ScopeName = "Testscopecreation"
 $SecretName = "databrickstestsec"
 $SecretValue = "testdatabricksvalue"
 
-
-Set-DatabricksSecret -BearerToken $BearerToken -Region $Region -ScopeName $ScopeName -SecretName $SecretName -SecretValue $SecretValue  -Verbose
+Describe "Set-DatabricksSecret" {
+    It "Simple test value" {
+            Set-DatabricksSecret -BearerToken $BearerToken -Region $Region -ScopeName $ScopeName -SecretName $SecretName -SecretValue $SecretValue  -Verbose
+    }
+}
